@@ -1,0 +1,30 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+.stars span {
+  display: flex;
+  flex-direction: row; }
+
+.stars a {
+  padding-right: 4px;
+  text-decoration: none;
+  cursor: pointer; }
+
+.stars a::after {
+  font-size: 15px;
+  font-family: 'FontAwesome', serif;
+  content: "\f005";
+  color: #1fadb6; }
+
+.stars a:hover ~ a::after {
+  color: #aaa !important; }
+
+.stars span.active a.active ~ a::after {
+  color: #aaaaaa; }
+
+.stars span:hover a::after {
+  color: #1fadb6; }
+
+.star span.active a::after,
+.stars a.active::after {
+  color: #1fadb6; }
+
+/*# sourceMappingURL=star-rating.css.map */

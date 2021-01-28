@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Header</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/abb682e346.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- <script src="script.js" type="text/javascript"></script> -->
+    <!---font awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+      <header classs="header-main">
+        <div class="header-cta-bar">
+          <p class="header-cta-notification">New video chat on covid-19 lorem ipsum May 12 at 1pm subscribe to attend</p>
+        </div>
+        <div class="header-main-inner">
+            <a class="header-logo-wrapper" href="#" title="logo">
+              <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.6 47.547" width="175.6" height="47.547"><path d="M25 36.8c.3-4.4-1.8-8.2-8.5-11l-5.1-2.1c-6.6-2.8-9-7.2-8.7-12.2.6-7.9 7-11.7 15-11.1 5.5.4 8.9 1.8 11.9 3.9l-.5 6.7h-.6c-2.1-6.5-6.1-8.5-10.9-8.8-5.1-.3-9.2 2.9-9.5 7.3-.3 3.8 1 6.8 6.3 9.1l4 1.7c5.3 2.2 12.6 5.5 12 14.4-.6 8.2-6.7 13.4-16.1 12.8-5.9-.4-10.7-2-14.3-4.9L.5 35h.6c3 9.4 8.1 10.1 12.6 10.4 7.3.4 11-3.5 11.3-8.6zm39.5 5.1c0 2.9 1 3.6 4 3.6h2.6v1.1h-19v-1.2h2.3c3.3 0 4.3-.7 4.3-3.5V3.4h-7.5c-5.6 0-8.3 2.4-9.2 7.7h-.6V1.3h40.2v9.8h-.5c-.8-5.3-3.5-7.7-9.2-7.7h-7.5v38.5zm94 0c0 2.9 1 3.6 4 3.6h2.6v1.1h-19v-1.2h2.3c3.3 0 4.3-.7 4.3-3.5V3.4h-7.5c-5.6 0-8.3 2.4-9.2 7.7h-.6V1.3h40.2v9.8h-.6c-.8-5.3-3.5-7.7-9.2-7.7h-7.5v38.5zM116.4 0h.7l7 42.2c.6 2.1 1.7 3.3 3.9 3.3h1.3l-.2 1.1h-15.8l.2-1.2h1.2c2.2 0 3.7-.7 3.3-2.7l-2-12.4H99.9l-4.7 7.5c-4.1 7-3.2 7.6.9 7.6h.9l-.1 1.2H83.6l.2-1.2h.6c3.1 0 4.2-1 8-6.9l24-38.5zm-14.1 26.6h13.2L112.8 10l-10.5 16.6z" fill="#231f20"/></svg>
+            </a>
+            <button class="header-btn header-btn-menu overlay-toggle" data-overlay-id="menu-main" title="Menu"><span class="fas fa-bars"></span></button>
+            <nav class="header-nav nav-social">
+                <ul class="nav-inner">
+                    <li class="nav-item-social"><a class="social-item-content" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li class="nav-item-social"><a class="social-item-content" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="nav-item-social"><a class="social-item-content" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+            </nav>
+            <a class="header-btn contribute" href="#" title="Contribute">Contribute</a>
+            <nav class="header-nav nav-secondary logged out">
+                <ul class="nav-inner">
+                    <li class="nav-item stat-paywall-subscribe modal"><a class="nav-item-content">Subscribe</a></li>
+                    <li class="nav-item stat-paywall-login modal"><a class="nav-item-content">Log In</a></li>
+                </ul>
+            </nav>
+            <a class="header-btn stat-paywall-try" href="#" title="Try Stat Plus">Try STAT+ TODAY</a>
+            <a class="header-btn my-account" href="#" title="My Account">My Account</a>
+        </div>
+        <div id="menu-main" class="menu-main overlay">
+          <div class="menu-main-inner">
+            <div class="header-btn-wrap">
+              <button class="header-btn header-btn-menu overlay-toggle" data-overlay-id-"menu-main" title="Close"><span class="fas fa-times"></span></button>
+              <a class="header-btn stat-paywall-try" href="#" title="Try Stat Plus">Try Stat Plus</a>
+            </div>
+            <div class="mobile-search">
+              <form class="mobile-form" action="index.html" method="post">
+                  <input type="search" id="search" name="searchTerm" autocorrect="off" autocapitalize="off" autocomplete="off" placeholder="Search..." aria-label="Search: suggestions appear below">
+              </form>
+            </div>
+            <div class="mobile-menu-container">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a id="topic-btn" class="item-title" href="#" role="menu">Topic
+                    <span class="fas fa-caret-down"></span>
+                  </a>
+                  <ul class="submenu-list" id="topic-show">
+                    <li class="submenu-list-title"><a class="submenu-link">Health</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Pharma</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Biotech</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Politics & Policy</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Health Tech</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">In the Lab</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Business</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" id="opinion-btn" href="#" role="menu">Opinion
+                    <span class="fas fa-caret-down"></span>
+                  </a>
+                  <ul class="submenu-list" id="opinion-show">
+                    <li class="submenu-list-title"><a class="submenu-link">First Opinion</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Pharma</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Biotech</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Politics & Policy</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" id="team-btn" href="#" role="menu">Team
+                    <span class="fas fa-caret-down"></span>
+                  </a>
+                  <ul class="submenu-list" id="team-show">
+                    <li class="submenu-list-title"><a class="submenu-link">Biotech</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Health Tech</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Politics</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">General Assignment</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Editors</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" id="event-btn" href="#" role="menu">Event
+                    <span class="fas fa-caret-down"></span>
+                  </a>
+                  <ul class="submenu-list" id="event-show">
+                    <li class="submenu-list-title"><a class="submenu-link">Upcoming Events</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">STAT Health Tech Summit 2020</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">STAT Summit 2020</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Webinars</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">STAT Expert Advantage</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" href="#" role="menu">Newletters</a>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" href="#" role="menu">Reports</a>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" href="#" role="menu">Video</a>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" href="#" role="menu">Podcast</a>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" id="stat-plus-btn" href="#" role="menu">STAT Plus
+                    <span class="fas fa-caret-down"></span>
+                  </a>
+                  <ul class="submenu-list" id="stat-plus-show">
+                    <li class="submenu-list-title"><a class="submenu-link">Topics</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Columns</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Tools</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Events</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Team</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-secondary">
+              <p class="secondary-title" id="account-border"><span class="fas fa-user-alt"></span>Account</p>
+              <ul class="secondary-list">
+                <li class="submenu-list-title"><a class="submenu-link">My Account</a></li>
+                <li class="submenu-list-title"><a class="submenu-link">Billing</a></li>
+                <li class="submenu-list-title"><a class="submenu-link">Help</a></a></li>
+                <li class="submenu-list-title"><a class="submenu-link">Subscribe</a></li>
+                <li class="submenu-list-title"><a class="submenu-link">Log In</a></li>
+              </ul>
+            </div>
+            <div class="mobile-secondary">
+              <p class="secondary-title">More</p>
+              <ul class="secondary-list">
+                <li class="submenu-list-title"><a class="submenu-link">Contribute</a></li>
+                <li class="submenu-list-title"><a class="submenu-link">Group Subscriptions</a></li>
+              </ul>
+            </div>
+            <div class="mobile-secondary">
+              <p class="secondary-title">Follow Us</p>
+              <div class="footer-follow">
+                <ul class="follow-list">
+        					<li class="follow-items"><a class="fab fa-twitter" href="//twitter.com/statnews/" title="Twitter"></a></li>
+        					<li class="follow-items"><a class="fab fa-linkedin-in" href="//linkedin.com/statnews/" title="Linkedin"></a></li>
+        					<li class="follow-items"><a class="fab fa-facebook-f" href="//facebook.com/statnews/" title="Facebook"></a></li>
+        					<li class="follow-items"><a class="fab fa-youtube" href="//www.youtube.com/channel/UC89FjSf9AT1O2qw6vxrrxDQ" title="Youtube"></a></li>
+        					<li class="follow-items"><a class="fab fa-instagram" href="//www.instagram.com/statnews" title="Instagram"></a></li>
+        				</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-nav nav-primary">
+            <ul class="nav-inner">
+                <li></li>
+            </ul>
+        </div>
+        <div class="header-cta">
+            <div class="header-cta-wrap">
+              <p class="cta-title">Trending:</p>
+              <nav class="cta-inner">
+                <ul class="cta-slider-inner">
+                  <li class="cta-item"><a class="cta-item-link">Cornavirus</a></li>
+                  <li class="cta-item"><a class="cta-item-link">Covid-19 tracker</a></li>
+                  <li class="cta-item"><a class="cta-item-link">Global Health</a></li>
+                  <li class="cta-item"><a class="cta-item-link">CDC</a></li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+      </header>
+      <script type="text/javascript">
+          $('.fa-bars').click(function() {
+            $(this).toggleClass("click");
+            $('#menu-main').toggleClass("show");
+          });
+          $('.fa-times').click(function() {
+            $(this).toggleClass("click");
+            $("#menu-main").toggleClass("close");
+          });
+          $(document).ready(function () {
+            $('#topic-btn').click(function(){
+              $('#topic-show').toggle('show');
+            });
+          });
+          $(document).ready(function () {
+            $('#opinion-btn').click(function(){
+              $('#opinion-show').toggle('show');
+            });
+          });
+          $(document).ready(function () {
+            $('#team-btn').click(function(){
+              $('#team-show').toggle('show');
+            });
+          });
+          $(document).ready(function () {
+            $('#event-btn').click(function(){
+              $('#event-show').toggle('show');
+            });
+          });
+          $(document).ready(function () {
+            $('#stat-plus-btn').click(function(){
+              $('#stat-plus-show').toggle('show');
+            });
+          });
+      </script>
+
+  </body>
+</html>

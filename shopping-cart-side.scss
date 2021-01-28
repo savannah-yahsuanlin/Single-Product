@@ -1,0 +1,235 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+$stat-teal: #1fadb6;
+$teal-dark: #1c9ba3;
+
+
+.shopping-side {    
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    width:  100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 999999999;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+button.close {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    border: 0;
+    color: $stat-teal;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+        color: $teal-dark;
+    }
+}
+
+.cart-title {
+    color: #1c1c1c;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Circular,sans-serif;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.cart-item-quantity {
+    color: #bbb;
+    font-size: 1rem;
+}
+
+.cart-footer {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.total-symbol {
+    font-family: Circular,sans-serif;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    padding-right: 10px;
+    text-transform: capitalize;
+    color: #1c1c1c;
+}
+
+.total-number {
+    font-size: 16px;
+    color: $stat-teal;
+}
+
+.last-call {
+    flex-direction: row;
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.view-cart, .checkout {
+    min-height: 40px;
+    background-color: $stat-teal;
+    border: 0;
+    padding: 0.78571em 1.1em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $teal-dark;
+    }
+}
+
+.view-cart {
+    padding: 0.78571em 1.25em;
+}
+
+.cart-item {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.cart-item-list {
+    font-family: Circular,sans-serif;
+    list-style: none;
+    line-height: 1.4;
+    font-size: 17px;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-quantity {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-left: none;
+    border-right: none;
+    width: 40px;
+    max-height: 20px;
+    background-color: transparent;
+}
+
+.input-group {
+    display: flex;
+    width: 100px;
+}
+
+input[type="button"] {
+    width: 30px;
+    background-color: transparent;
+    color: $stat-teal;
+    font-size: 22px;
+    padding: 0;
+    font-weight: 400;
+}
+
+.cart-minus {
+    border-right: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+.cart-plus {
+    border-left: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+
+.item-list-details {
+    display: flex;
+    margin: 0 20px 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-details-content {
+   justify-content: row;
+}
+
+.details-content-title, .cart-license {
+    font-size: 17px;
+    padding: 0;
+    margin: 0 0 0.8em 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.cart-license {
+    color: #bbb;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 0.7;
+    margin-bottom: 12px;
+    
+
+    span{
+        color: #1c1c1c;
+        padding-left: 5px;
+    }
+}
+
+.details-option {
+    display: flex;
+    align-items: center;
+    margin: auto 0 0 10px;
+    justify-content: space-between;
+}
+
+.cart-remove {
+    font-size: 14px;
+    cursor: pointer;
+   
+    
+    a {
+        text-decoration: none;
+        color: #1c1c1c;
+    }
+}
+
+.cart-details-price {
+    font-size: 14px;
+    color: #1c1c1c;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    appearance: none;
+}
+@media (min-width: 768px){
+    .shopping-side {
+        width: 30%;
+        bottom: 0;
+        height: 100%;
+        top: auto;
+        display: none;
+    }
+
+}
+@media (min-width: 1024px) {
+    .shopping-side {
+        display: none;
+    }
+
+    button.close {
+        font-size: 24px;
+    }
+
+    .cart-title {
+        font-size: 26px;
+    }
+}

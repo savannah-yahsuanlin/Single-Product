@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<head>
+<title>Single Product</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+
+<link rel="stylesheet" href="single-product.css">
+<link rel="stylesheet" href="star-rating.css">
+<link rel="stylesheet" href="shopping-cart-side.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://github.com/ngshvanam/rating/blob/master/jquery.rating.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+<script src="single-page.js"></script>
+<script src="shopping-cart.js" async></script>
+</head>
+
+<body>     
+<header classs="header-main">
+        <div class="header-cta-bar">
+          <p class="header-cta-notification">New video chat on covid-19 lorem ipsum May 12 at 1pm subscribe to attend</p>
+        </div>
+        <div class="header-main-inner">
+            <a class="header-logo-wrapper" href="#" title="logo">
+              <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.6 47.547" width="175.6" height="47.547"><path d="M25 36.8c.3-4.4-1.8-8.2-8.5-11l-5.1-2.1c-6.6-2.8-9-7.2-8.7-12.2.6-7.9 7-11.7 15-11.1 5.5.4 8.9 1.8 11.9 3.9l-.5 6.7h-.6c-2.1-6.5-6.1-8.5-10.9-8.8-5.1-.3-9.2 2.9-9.5 7.3-.3 3.8 1 6.8 6.3 9.1l4 1.7c5.3 2.2 12.6 5.5 12 14.4-.6 8.2-6.7 13.4-16.1 12.8-5.9-.4-10.7-2-14.3-4.9L.5 35h.6c3 9.4 8.1 10.1 12.6 10.4 7.3.4 11-3.5 11.3-8.6zm39.5 5.1c0 2.9 1 3.6 4 3.6h2.6v1.1h-19v-1.2h2.3c3.3 0 4.3-.7 4.3-3.5V3.4h-7.5c-5.6 0-8.3 2.4-9.2 7.7h-.6V1.3h40.2v9.8h-.5c-.8-5.3-3.5-7.7-9.2-7.7h-7.5v38.5zm94 0c0 2.9 1 3.6 4 3.6h2.6v1.1h-19v-1.2h2.3c3.3 0 4.3-.7 4.3-3.5V3.4h-7.5c-5.6 0-8.3 2.4-9.2 7.7h-.6V1.3h40.2v9.8h-.6c-.8-5.3-3.5-7.7-9.2-7.7h-7.5v38.5zM116.4 0h.7l7 42.2c.6 2.1 1.7 3.3 3.9 3.3h1.3l-.2 1.1h-15.8l.2-1.2h1.2c2.2 0 3.7-.7 3.3-2.7l-2-12.4H99.9l-4.7 7.5c-4.1 7-3.2 7.6.9 7.6h.9l-.1 1.2H83.6l.2-1.2h.6c3.1 0 4.2-1 8-6.9l24-38.5zm-14.1 26.6h13.2L112.8 10l-10.5 16.6z" fill="#231f20"/></svg>
+            </a>
+            <button class="header-btn header-btn-menu overlay-toggle" data-overlay-id="menu-main" title="Menu"><span class="fas fa-bars"></span></button>
+            <nav class="header-nav nav-social">
+                <ul class="nav-inner">
+                    <li class="nav-item-social"><a class="social-item-content" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li class="nav-item-social"><a class="social-item-content" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="nav-item-social"><a class="social-item-content" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+            </nav>
+            <a class="header-btn contribute" href="#" title="Contribute">Contribute</a>
+            <nav class="header-nav nav-secondary logged out">
+                <ul class="nav-inner">
+                    <li class="nav-item stat-paywall-subscribe modal"><a class="nav-item-content">Subscribe</a></li>
+                    <li class="nav-item stat-paywall-login modal"><a class="nav-item-content">Log In</a></li>
+                </ul>
+            </nav>
+            <a class="header-btn stat-paywall-try" href="#" title="Try Stat Plus">Try STAT+</a>
+            <a class="header-btn my-account" href="#" title="My Account">My Account</a>
+        </div>
+        <div id="menu-main" class="menu-main overlay">
+          <div class="menu-main-inner">
+            <div class="header-btn-wrap">
+              <button class="header-btn header-btn-menu overlay-toggle" data-overlay-id-"menu-main" title="Close"><span class="fas fa-times"></span></button>
+              <a class="header-btn stat-paywall-try" href="#" title="Try Stat Plus">Try Stat Plus</a>
+            </div>
+            <div class="mobile-search">
+              <form class="mobile-form" action="index.html" method="post">
+                  <input type="search" id="search" name="searchTerm" autocorrect="off" autocapitalize="off" autocomplete="off" placeholder="Search..." aria-label="Search: suggestions appear below">
+              </form>
+            </div>
+            <div class="mobile-menu-container">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a id="topic-btn" class="item-title" href="#" role="menu">Topic
+                    <span class="fas fa-caret-down"></span>
+                  </a>
+                  <ul class="submenu-list" id="topic-show">
+                    <li class="submenu-list-title"><a class="submenu-link">Health</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Pharma</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Biotech</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Politics & Policy</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Health Tech</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">In the Lab</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Business</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" id="opinion-btn" href="#" role="menu">Opinion
+                    <span class="fas fa-caret-down"></span>
+                  </a>
+                  <ul class="submenu-list" id="opinion-show">
+                    <li class="submenu-list-title"><a class="submenu-link">First Opinion</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Pharma</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Biotech</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Politics & Policy</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" id="team-btn" href="#" role="menu">Team
+                    <span class="fas fa-caret-down"></span>
+                  </a>
+                  <ul class="submenu-list" id="team-show">
+                    <li class="submenu-list-title"><a class="submenu-link">Biotech</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Health Tech</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Politics</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">General Assignment</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Editors</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" id="event-btn" href="#" role="menu">Event
+                    <span class="fas fa-caret-down"></span>
+                  </a>
+                  <ul class="submenu-list" id="event-show">
+                    <li class="submenu-list-title"><a class="submenu-link">Upcoming Events</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">STAT Health Tech Summit 2020</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">STAT Summit 2020</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Webinars</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">STAT Expert Advantage</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" href="#" role="menu">Newletters</a>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" href="#" role="menu">Reports</a>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" href="#" role="menu">Video</a>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" href="#" role="menu">Podcast</a>
+                </li>
+                <li class="menu-item">
+                  <a class="item-title" id="stat-plus-btn" href="#" role="menu">STAT Plus
+                    <span class="fas fa-caret-down"></span>
+                  </a>
+                  <ul class="submenu-list" id="stat-plus-show">
+                    <li class="submenu-list-title"><a class="submenu-link">Topics</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Columns</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Tools</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Events</a></li>
+                    <li class="submenu-list-title"><a class="submenu-link">Team</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-secondary">
+              <p class="secondary-title" id="account-border"><span class="fas fa-user-alt"></span>Account</p>
+              <ul class="secondary-list">
+                <li class="submenu-list-title"><a class="submenu-link">My Account</a></li>
+                <li class="submenu-list-title"><a class="submenu-link">Billing</a></li>
+                <li class="submenu-list-title"><a class="submenu-link">Help</a></a></li>
+                <li class="submenu-list-title"><a class="submenu-link">Subscribe</a></li>
+                <li class="submenu-list-title"><a class="submenu-link">Log In</a></li>
+              </ul>
+            </div>
+            <div class="mobile-secondary">
+              <p class="secondary-title">More</p>
+              <ul class="secondary-list">
+                <li class="submenu-list-title"><a class="submenu-link">Contribute</a></li>
+                <li class="submenu-list-title"><a class="submenu-link">Group Subscriptions</a></li>
+              </ul>
+            </div>
+            <div class="mobile-secondary">
+              <p class="secondary-title">Follow Us</p>
+              <div class="footer-follow">
+                <ul class="follow-list">
+        					<li class="follow-items"><a class="fab fa-twitter" href="//twitter.com/statnews/" title="Twitter"></a></li>
+        					<li class="follow-items"><a class="fab fa-linkedin-in" href="//linkedin.com/statnews/" title="Linkedin"></a></li>
+        					<li class="follow-items"><a class="fab fa-facebook-f" href="//facebook.com/statnews/" title="Facebook"></a></li>
+        					<li class="follow-items"><a class="fab fa-youtube" href="//www.youtube.com/channel/UC89FjSf9AT1O2qw6vxrrxDQ" title="Youtube"></a></li>
+        					<li class="follow-items"><a class="fab fa-instagram" href="//www.instagram.com/statnews" title="Instagram"></a></li>
+        				</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-nav nav-primary">
+            <ul class="nav-inner">
+                <li></li>
+            </ul>
+        </div>
+        <div class="header-cta">
+            <div class="header-cta-wrap">
+              <p class="cta-title">Trending:</p>
+              <nav class="cta-inner">
+                <ul class="cta-slider-inner">
+                  <li class="cta-item"><a class="cta-item-link">Cornavirus</a></li>
+                  <li class="cta-item"><a class="cta-item-link">Covid-19 tracker</a></li>
+                  <li class="cta-item"><a class="cta-item-link">Global Health</a></li>
+                  <li class="cta-item"><a class="cta-item-link">CDC</a></li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+<script>
+ $('span.fa-bars').click(function() {
+                $(this).toggleClass("click");
+                $('div#menu-main').toggleClass("show");
+            });
+            $('.fa-times').click(function() {
+                $(this).toggleClass("click");
+                $("#menu-main").toggleClass("close");
+            });
+
+          $(document).ready(function () {
+              $('#topic-btn').click(function(){
+              $('#topic-show').toggle('show');
+            });
+          });
+          $(document).ready(function () {
+            $('#opinion-btn').click(function(){
+              $('#opinion-show').toggle('show');
+            });
+          });
+          $(document).ready(function () {
+            $('#team-btn').click(function(){
+              $('#team-show').toggle('show');
+            });
+          });
+          $(document).ready(function () {
+            $('#event-btn').click(function(){
+              $('#event-show').toggle('show');
+            });
+          });
+          $(document).ready(function () {
+            $('#stat-plus-btn').click(function(){
+              $('#stat-plus-show').toggle('show');
+            });
+          });
+
+</script>
+</header>	
+	
+<div class="report">
+  <div class="report-container">
+    <div class="report-left">
+       <h3 class="sub-title">
+         <a href="#">Nanotechnology in Medicine</a>
+       </h3>
+        <div class="slideshow-container">
+            <div class="slides">
+                <img src="https://user-images.githubusercontent.com/12411476/103046681-1ca55280-4557-11eb-9b28-792f915585d7.png">
+            </div>
+            <div class="slides">
+                <img src="https://user-images.githubusercontent.com/12411476/103046674-1a42f880-4557-11eb-8fae-95b834bcd237.png">
+            </div>
+            <div class="slides">
+                <img src="https://user-images.githubusercontent.com/12411476/103046668-17e09e80-4557-11eb-96c4-274dd9579803.png">
+            </div>
+            <div class="slides">
+                <img src="https://user-images.githubusercontent.com/12411476/103046660-131bea80-4557-11eb-8a11-107d4aa89627.png">
+            </div>
+            <a class="prev" id="prev" >&#10094;</a>
+            <a class="next" id="next" >&#10095;</a> 
+        </div>
+    </div>
+    <div class="report-right">
+        <h3 class="sub-title-desktop">Nanotechnology in Medicine</h3>
+        <p class="author">
+            <em>By</em>
+            <a href="#" class="author-name">Elizabeth Cooney</a>
+        </p>
+        <p class="price" id="price">
+        $499
+       </p>
+       <div class="review-wrap">
+         <p class="reviews">
+         Reviews:
+         </p>
+         <p class="stars">
+            <span>
+              <a class="star-1"></a>
+              <a class="star-2"></a>
+              <a class="star-3"></a>
+              <a class="star-4"></a>
+              <a class="star-5"></a>
+            </span>
+          </p>
+          <span class="total-reviews">(72)</span>
+       </div>
+       <div class="cart-section">
+        <ul class="license" id="license">License Type:
+         <li id="individual" type="radio" class="license-option">individual</li>
+         <li id="group" data-price="749" type="radio" class="license-option">Group</li>
+        </ul>
+       </div> 
+       <div class="option-section">
+       <div class="volumn" style="margin: 0 auto;">
+          <button class="decrease">
+            <span id="minus">-</span>
+          </button>
+         <input type="text" value="1" id="counter">
+         <button class="increase">
+          <span  id="plus">+</span>
+          </button>
+       </div>
+   </div>
+        <button class="add-to-cart" id="addToCart" disabled>
+            Add to cart
+         </button>
+    <div class="tags">
+        <p class="tag-name">Tags</p>
+        <div class="tag-list">
+            <p><a href="#">STAT reports</a></p>
+            <p><a href="#">Health</a></p>
+            <p><a href="#">Hospitals</a></p>
+            <p><a href="#">Public Health</a></p>
+        </div>
+    </div>
+        
+   <div class="report-content">
+     <div class="description">
+       <p>
+         If you’ll pardon the pun, nanotechnology is big. The science of manipulating molecules and materials under 100 nanometers in size is spurring advances in drug development, diagnosis, and treatment. In our latest STAT Report, we look at the different kinds of nanomaterials being developed for medical applications, how they work, and the treatments in which they are being used. We also examine the key companies involved in bringing nano-products to market; the challenges they’re facing in demonstrating safety and efficacy; and the ways they’re trying to overcome them.
+       </p>
+     </div>
+   </div>
+    <div class="instruction">
+        <p class="instr-title">How it works</p>
+        <button class="trigger" id="trigger">+</button>
+    </div>  
+    <div class="instr-content">
+        <p class="instr-description">
+          Add this report to your cart, and then complete the checkout process. Once you have, you'll receive an email with the link to download the full report file. This report is digital-only, so you will not receive a printout.
+        </p>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="cart-container">
+    <div class="shopping-cart">
+        <span class="item-count" id="itemCount">0</span>
+        <span class="fas fa-shopping-cart" id="open-side-nav"></span>
+    </div>
+    <div class="shopping-side" id="shopping-side">
+        <button class="close fas fa-times" id="close-side-nav"></button>
+        <h3 class="cart-title">Cart</h3>
+        <div class="cart-item">
+            <ul class="cart-item-list"> 
+            </ul>
+        </div>
+        <div class="cart-footer">
+            <p class="total-symbol">Subtotal: <span class="total-number"></span></p>
+            <div class="last-call"> 
+                <button class="view-cart">View cart</button>
+                <button class="checkout">Check out</button>
+            </div>
+        </div>
+    </div>
+</div>		
+<div class="comment-section section">
+    <div class="comment-details">
+        <h5 class="comment-description">Description:</h5>
+        <p>
+        If you’ll pardon the pun, nanotechnology is big. The science of manipulating molecules and materials under 100 nanometers in size is spurring advances in drug development, diagnosis, and treatment.
+        In our latest STAT Report, we look at the different kinds of nanomaterials being developed for medical applications, how they work, and the treatments in which they are being used. We also examine the key companies involved in bringing nano-products to market; the challenges they’re facing in demonstrating safety and efficacy; and the ways they’re trying to overcome them.
+        </p> 
+    </div>
+    <div class="comment-details">
+        <h5 class="comment-description">How it work:</h5>
+        <p>
+        Add this report to your cart, and then complete the checkout process. Once you have, you'll receive an email with the link to download the full report file. This report is digital-only, so you will not receive a printout. 
+        </p>
+    </div>
+</div>
+<div class="additional-report">
+    <h2 class="section-title">More <a href="#">Reports</a></h2>
+    <div class="report-row">
+        <article class="report-preview">
+            <div class="img-wrap">
+                    <img src="https://user-images.githubusercontent.com/12411476/103178360-21685000-4850-11eb-8dda-52c3b29260b3.png" class="preview-img">
+            </div>
+            <div class="additional-report-container">
+                <span class="preview-meta">
+                    <a href="#" class="meta-title">STAT reports</a>
+                    <span class="additional-author">
+                        BY Eric Brodwin
+                    </span>
+                </span>
+                <p class="report-subject"><a>The emerging role of remote patient monitoring</a></p>
+            </div>
+        </article>
+          <article class="report-preview">
+            <div class="img-wrap">
+                    <img src="https://user-images.githubusercontent.com/12411476/103178360-21685000-4850-11eb-8dda-52c3b29260b3.png" class="preview-img">
+            </div>
+            <div class="additional-report-container">
+                <span class="preview-meta">
+                    <a href="#" class="meta-title">STAT reports</a>
+                    <span class="additional-author">
+                        BY Eric Brodwin
+                    </span>
+                </span>
+                <p class="report-subject"><a>The emerging role of remote patient monitoring</a></p>
+            </div>
+        </article>
+          <article class="report-preview">
+            <div class="img-wrap">
+                    <img src="https://user-images.githubusercontent.com/12411476/103178360-21685000-4850-11eb-8dda-52c3b29260b3.png" class="preview-img">
+            </div>
+            <div class="additional-report-container">
+                <span class="preview-meta">
+                    <a href="#" class="meta-title">STAT reports</a>
+                    <span class="additional-author">
+                        BY Eric Brodwin
+                    </span>
+                </span>
+                <p class="report-subject"><a>The emerging role of remote patient monitoring</a></p>
+            </div>
+        </article>
+    </div>
+     <div class="report-row">
+        <article class="report-preview">
+            <div class="img-wrap">
+                    <img src="https://user-images.githubusercontent.com/12411476/103178360-21685000-4850-11eb-8dda-52c3b29260b3.png" class="preview-img">
+            </div>
+            <div class="additional-report-container">
+               <span class="preview-meta">
+                    <a href="#" class="meta-title">STAT reports</a>
+                    <span class="additional-author">
+                        BY Eric Brodwin
+                    </span>
+                </span>
+                <p class="report-subject"><a>The emerging role of remote patient monitoring</a></p>
+            </div>
+        </article>
+          <article class="report-preview">
+            <div class="img-wrap">
+                    <img src="https://user-images.githubusercontent.com/12411476/103178360-21685000-4850-11eb-8dda-52c3b29260b3.png" class="preview-img">
+            </div>
+            <div class="additional-report-container">
+                <span class="preview-meta">
+                    <a href="#" class="meta-title">STAT reports</a>
+                    <span class="additional-author">
+                        BY Eric Brodwin
+                    </span>
+                </span>
+                <p class="report-subject"><a>The emerging role of remote patient monitoring</a></p>
+            </div>
+        </article>
+          <article class="report-preview">
+            <div class="img-wrap">
+                    <img src="https://user-images.githubusercontent.com/12411476/103178360-21685000-4850-11eb-8dda-52c3b29260b3.png" class="preview-img">
+            </div>
+            <div class="additional-report-container">
+                <span class="preview-meta">
+                    <a href="#" class="meta-title">STAT reports</a>
+                    <span class="additional-author">
+                        BY Eric Brodwin
+                    </span>
+                </span>
+                <p class="report-subject"><a>The emerging role of remote patient monitoring</a></p>
+            </div>
+        </article>
+    </div>
+</div>
+
+</body>
+</html>

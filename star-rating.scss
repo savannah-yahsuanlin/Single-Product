@@ -1,0 +1,39 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+$stat-teal: #1fadb6;
+$teal-dark: #1c9ba3;
+
+.stars span {
+    display: flex;
+    flex-direction: row;
+}
+
+.stars a {
+    padding-right: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.stars a::after {
+    font-size: 15px;
+    font-family: 'FontAwesome', serif;
+    content: "\f005";
+    color: $stat-teal;
+}
+
+.stars a:hover ~ a::after{
+  color: #aaa !important;
+}
+.stars span.active a.active ~ a::after{
+  color: #aaaaaa;
+}
+
+.stars span:hover a::after{
+  
+color: $stat-teal;
+}
+
+.star span.active a::after,
+.stars a.active::after{
+  color: $stat-teal;
+}
